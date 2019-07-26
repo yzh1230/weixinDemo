@@ -12,8 +12,9 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view> -->
-<view>
-
+<view class="flex flex-start">
+ <image class="sm-img" src="../../assets/img/position.png" />
+ <view>{{markers[0].title}}</view>
 </view>
 <view>
   <swiper  indicator-dots="{{indicatorDots}}"
