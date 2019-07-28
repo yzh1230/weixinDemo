@@ -14,8 +14,45 @@
 </view> -->
 <view class="flex flex-start">
  <image class="sm-img" src="../../assets/img/position.png" />
- <view>{{markers[0].title}}</view>
+ <view class="f-28">{{markers[0].title}}</view>
 </view>
+
+<view class="search-wrap"> 
+  <view class="flex flex-start search-content">
+    <image class="search-icon"  src="../../assets/img/search.png"></image>
+    <view class="f-28 grey">玫瑰</view>
+  </view>
+</view>
+
+<view class="coupon-wrap">
+  <view class="coupon-content flex flex-start">
+    <view class="col-4 flex-column flex-center coupon">
+      <view class="flex flex-start">
+        <view>￥</view>
+        <view class="coupon-num">5</view>
+      </view>
+      <view>满59可用</view>
+      <view>点击领取</view>
+    </view>
+   <view class="col-4 flex-column flex-center coupon">
+      <view class="flex flex-start">
+        <view>￥</view>
+        <view class="coupon-num">10</view>
+      </view>
+      <view>满99可用</view>
+      <view>点击领取</view>
+    </view>
+    <view class="col-4 flex-column flex-center coupon">
+      <view class="flex flex-start">
+        <view>￥</view>
+        <view class="coupon-num">20</view>
+      </view>
+      <view>满159可用</view>
+      <view>点击领取</view>
+    </view>
+  </view>
+</view>
+
 <view>
   <swiper  indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"

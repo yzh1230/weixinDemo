@@ -23,3 +23,41 @@
   width: 100%;
   height: 400rpx;
 }
+.search-wrap{
+  width: 100%;
+  padding: 0rpx 30rpx;
+  margin-top:20rpx;
+  margin-bottom:20rpx;
+}
+.search-content{
+  width: 100%;
+ background: #f7f7f7;
+ height: 60rpx;
+ border-radius: 10rpx;
+}
+.search-icon{
+ width: 50rpx;
+ height:50rpx;
+}
+.coupon-wrap{
+  width: 100%;
+  padding:0rpx 30rpx;
+  margin-bottom: 20rpx;
+}
+.coupon-content{
+  background: #f6deea;
+  padding:20rpx 0rpx;
+}
+.coupon{
+  border-right: 1px solid #cdcdcd;
+  color: #707070;
+  font-size:24rpx;
+  line-height:48rpx;
+}
+.coupon-num{
+  color: #d81e06;
+   font-size:48rpx;
+}
+.coupon:last-child{
+  border:none !important;
+}
