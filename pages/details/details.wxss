@@ -1,0 +1,34 @@
+/* pages/details/details.wxss */
+.detail-swiper{
+  width: 100%;
+  height: 500rpx;
+}
+.detail-img{
+  width: 100%;
+  height: 500rpx;
+}
+.detail-tips{
+   width:50rpx;
+  height:30rpx;
+  position: absolute;
+  z-index: 100;
+  right: 20rpx;
+  bottom:20rpx;
+  color: #fff;
+  background:rgba(163,163,163,0.8);
+  border-radius: 12rpx;
+  text-align: center;
+  line-height: 30rpx;
+  font-size:20rpx;
+}
+.discount{
+  background: #f75f83;
+  padding: 10rpx 30rpx;
+}
+.discount view{
+  color: #fff;
+}
+.share-icon{
+  width: 40rpx;
+  height:40rpx;
+}

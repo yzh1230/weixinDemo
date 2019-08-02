@@ -8,17 +8,7 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    imgUrls:[
-      '../../assets/img/timg.jpg',
-      '../../assets/img/timg1.jpg',
-      '../../assets/img/timg2.jpg',
-      '../../assets/img/timg3.jpg'
-    ],
-    indicatorDots: true,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
@@ -90,12 +80,9 @@ Page({
         });
       },
       fail: function (res) {
-        console.log(22)
-        console.log(res);
+       
       },
       complete: function (res) {
-        console.log(33)
-        console.log(res);
       }
     })
   },
@@ -126,6 +113,25 @@ Page({
     wx.reLaunch({
       url: '../index/index'
     })
+  },
+  // 跳转到详情页面
+  toDetails:function(){
+    wx.navigateTo({
+      url: '../details/details',
+      events: {
+        // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+        acceptDataFromOpenedPage: function (data) {
+          console.log(data)
+        },
+          someEvent: function (data) {
+            console.log(data)
+          }
+    },
+    success: function (res) {
+          // 通过eventChannel向被打开页面传送数据
+          res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
+        }
+      })
   }
 })
 

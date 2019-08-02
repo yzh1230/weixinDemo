@@ -1,17 +1,3 @@
-<!--index.wxml-->
-
-<!-- <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view> -->
 <view class="flex flex-start">
  <image class="sm-img" src="../../assets/img/position.png" />
  <view class="f-28">{{markers[0].title}}</view>
@@ -31,36 +17,87 @@
         <view>￥</view>
         <view class="coupon-num">5</view>
       </view>
-      <view>满59可用</view>
-      <view>点击领取</view>
+      <view class="drak-grey">满59可用</view>
+      <view class="drak-grey">点击领取</view>
     </view>
    <view class="col-4 flex-column flex-center coupon">
       <view class="flex flex-start">
         <view>￥</view>
         <view class="coupon-num">10</view>
       </view>
-      <view>满99可用</view>
-      <view>点击领取</view>
+      <view class="drak-grey">满99可用</view>
+      <view class="drak-grey">点击领取</view>
     </view>
     <view class="col-4 flex-column flex-center coupon">
       <view class="flex flex-start">
         <view>￥</view>
         <view class="coupon-num">20</view>
       </view>
-      <view>满159可用</view>
-      <view>点击领取</view>
+      <view class="drak-grey">满159可用</view>
+      <view class="drak-grey">点击领取</view>
     </view>
   </view>
 </view>
 
-<view>
-  <swiper  indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"
-   indicator-color="rgba(220,220,2205,0.5)" indicator-active-color="#00BFFF" >
-    <block wx:for="{{imgUrls}}" wx:key="*this">
-       <swiper-item>
-        <image src="{{item}}" class="banner"/>
-       </swiper-item>
-    </block>
-  </swiper>
+<view class="p-left-10 p-right-10 col-12">
+  <view class="banner-tips">精品推荐</view>
+  <view class="banner-big">
+    <image src="../../assets/img/nanshen5.jpg" mode='widthFix' bindtap="toDetails"></image>
+  </view>
+  <view class="flex flex-start m-top-10">
+    <view class="banner-sm flex-column">
+      <image src="../../assets/img/nanshen1.jpg" mode='widthFix'></image>
+      <view class="align-center banner-title">鲜花-糖果甜心</view>
+      <view class="align-center banner-price">￥338</view>
+    </view>
+     <view class="banner-sm flex-column">
+      <image src="../../assets/img/nanshen2.jpg" mode='widthFix'></image>
+       <view class="align-center  banner-title">鲜花-糖果甜心</view>
+      <view class="align-center banner-price">￥338</view>
+    </view>
+  </view>
+   <view class="flex flex-start m-top-10">
+    <view class="banner-sm flex-column">
+      <image src="../../assets/img/nanshen1.jpg" mode='widthFix'></image>
+      <view class="align-center  banner-title">鲜花-糖果甜心</view>
+      <view class="align-center banner-price">￥338</view>
+    </view>
+     <view class="banner-sm flex-column">
+      <image src="../../assets/img/nanshen2.jpg" mode='widthFix'></image>
+       <view class="align-center  banner-title">鲜花-糖果甜心</view>
+      <view class="align-center banner-price">￥338</view>
+    </view>
+  </view>
 </view>
+
+<view class="p-left-10 p-right-10 col-12">
+  <view class="banner-tips">创意礼盒</view>
+  <view class="banner-big">
+    <image src="../../assets/img/nanshen5.jpg" mode='widthFix'></image>
+  </view>
+  <view class="flex flex-start m-top-10">
+    <view class="banner-sm flex-column">
+      <image src="../../assets/img/nanshen1.jpg" mode='widthFix'></image>
+      <view class="align-center banner-title">鲜花-糖果甜心</view>
+      <view class="align-center banner-price">￥338</view>
+    </view>
+     <view class="banner-sm flex-column">
+      <image src="../../assets/img/nanshen2.jpg" mode='widthFix'></image>
+       <view class="align-center  banner-title">鲜花-糖果甜心</view>
+      <view class="align-center banner-price">￥338</view>
+    </view>
+  </view>
+   <view class="flex flex-start m-top-10">
+    <view class="banner-sm flex-column">
+      <image src="../../assets/img/nanshen1.jpg" mode='widthFix'></image>
+      <view class="align-center  banner-title">鲜花-糖果甜心</view>
+      <view class="align-center banner-price">￥338</view>
+    </view>
+     <view class="banner-sm flex-column">
+      <image src="../../assets/img/nanshen2.jpg" mode='widthFix'></image>
+       <view class="align-center  banner-title">鲜花-糖果甜心</view>
+      <view class="align-center banner-price">￥338</view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,68 @@
+<!--pages/details/details.wxml-->
+<view class="position-relative">
+  <swiper  indicator-dots="{{indicatorDots}}"
+  interval="{{interval}}" autoplay="{{autoplay}}" duration="{{duration}}" current="0"  bindchange="swiperChange"  class="detail-swiper" >
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+       <swiper-item>
+        <image src="{{item}}" class="detail-img"/>
+       </swiper-item>
+    </block>
+  </swiper>
+  <view class="detail-tips">
+      {{currentIndex}}/{{imgUrls.length}}
+  </view>
+</view>
+<view class="flex flex-between discount">
+  <view>限时折扣</view>
+  <view class="flex-column">
+    <view class="f-20">距结束仅剩</view>
+     <view class="f-20">06时03分50秒</view>
+  </view>
+</view>
+<view class="p-left-30 p-right-30">
+  <view class="flex flex-between-only p-top-10">
+    <view class="flex-column">
+      <view class="bold">天使的心跳</view>
+      <view class="f-20 drak-grey m-top-10">19枝粉玫瑰+尤加利叶</view>
+      <view class="flex flex-start m-top-10">
+        <view class="red">￥338.00</view>
+        <view class="tips-frame m-left-30">限时减价</view>
+      </view>
+      <view class="f-20 drak-grey line-through">￥468.00</view>
+    </view>
+    <view  class="flex-column">
+      <image class="share-icon" src="../../assets/img/share.png"/>
+      <view class="f-24">分享</view>
+    </view>
+  </view>
+
+  <view class="flex flex-between list-menu drak-grey">
+    <view class="flex flex-start">
+      <view>运费</view>
+      <view class="m-left-20">免运费</view>
+    </view>
+    <view class="flex flex-start">
+      <view>销量</view>
+      <view class="m-left-20">100</view>
+    </view>
+  </view>
+</view>
+
+<view class="p-left-30 p-right-30">
+  <view class="flex flex-start">
+    <view class="col-6 flex flex-center">商品详情</view>
+    <view class="col-6 flex flex-center">本店成交</view>
+  </view>
+  <view wx:for="{{imgUrls}}" wx:key="*this">
+    <image src="{{item}}" class="detail-img"/>
+  </view>
+</view>
+
+<view class="flex flex-between bottom-nav">
+  <view>首页</view>
+  <view>购物车</view>
+  <view>加入购物车</view>
+  <view>立即购买</view>
+</view>
+
+

@@ -1,7 +1,8 @@
 /**app.wxss**/
-page,view{
+page,view,image{
   box-sizing: border-box;
 }
+
 .container {
   height: 100%;
   display: flex;
@@ -39,12 +40,34 @@ page {
   justify-content: space-between;
   align-items: center;
 }
+.flex-between-only{
+   justify-content: space-between;
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
 .flex-no-wrap {
   flex-wrap: nowrap;
 }
+.alight-left{
+  text-align: left;
+}
+.align-center{
+  text-align: center;
+}
+.alight-right{
+ text-align: right;
+}
+.position-relative{
+  position: relative;
+}
+.position-absolute{
+  position: absolute;
+}
+.position-fixed{
+  position: fixed;
+}
+
 /* 宽度 */
 .col-1 {
   width: 8.33% !important;
@@ -137,6 +160,78 @@ page {
 .f-56 {
   font-size: 56rpx !important;
 }
+.bold{
+  font-weight: bold;
+}
+.line-through{
+  text-decoration: line-through;
+}
+.p-left-10 {
+  padding-left:10rpx;
+}
+.p-left-20{
+  padding-left:20rpx;
+}
+.p-left-30{
+  padding-left:30rpx;
+}
+.p-left-40{
+  padding-left:40rpx;
+}
+.p-left-50{
+  padding-left:50rpx;
+}
+.p-right-10{
+  padding-right:10rpx;
+}
+.p-right-20{
+   padding-right:20rpx;
+}
+.p-right-30{
+   padding-right:30rpx;
+}
+.p-right-40{
+   padding-right:40rpx;
+}
+.p-right-50{
+   padding-right:50rpx;
+}
+.p-top-10{
+  padding-top:10rpx;
+}
+.m-left-10{
+  margin-left:10rpx;
+}
+.m-left-20{
+  margin-left:20rpx;
+}
+.m-left-30{
+  margin-left:30rpx;
+}
+.m-left-40{
+  margin-left:40rpx;
+}
+.m-left-50{
+  margin-left:50rpx;
+}
+.m-right-10{
+  margin-right:10rpx;
+}
+.m-right-20{
+  margin-right:20rpx;
+}
+.m-right-30{
+  margin-right:30rpx;
+}
+.m-right-40{
+  margin-right:40rpx;
+}
+.m-right-50{
+  margin-right:50rpx;
+}
+.m-top-10{
+  margin-top: 10rpx;
+}
 /* 自定义导航 */
  
 .nav {
@@ -158,4 +253,40 @@ page {
 /* 颜色 */
 .grey{
   color: #cdcdcd;
+}
+.drak-grey{
+  color: #969696;
+}
+.red{
+  color:#FF3300;
+}
+
+/* 提示框 */
+.tips-frame{
+  border:1rpx solid #FF3300;
+  color: #FF3300;
+  width: 100rpx;
+  height:30rpx;
+  font-size:20rpx;
+  line-height: 30rpx;
+  text-align: center;
+}
+/* 边框 */
+.border-top-grey{
+  border-top:1rpx solid #dcdcdc;
+}
+/* 列表 */
+.list-menu{
+  font-size:24rpx;
+   border-top:1rpx solid #dcdcdc;
+   height: 80rpx;
+}
+
+.bottom-nav{
+  width: 100%;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  background: #fff;
+  height:80rpx;
 }

@@ -19,10 +19,6 @@
 .usermotto {
   margin-top: 200px;
 }
-.banner{
-  width: 100%;
-  height: 400rpx;
-}
 .search-wrap{
   width: 100%;
   padding: 0rpx 30rpx;
@@ -45,7 +41,7 @@
   margin-bottom: 20rpx;
 }
 .coupon-content{
-  background: #f6deea;
+  background: #ffcccc;
   padding:20rpx 0rpx;
 }
 .coupon{
@@ -55,9 +51,38 @@
   line-height:48rpx;
 }
 .coupon-num{
-  color: #d81e06;
+  color: #FF3300;
    font-size:48rpx;
 }
 .coupon:last-child{
   border:none !important;
+}
+.banner-big{
+  width: 100%;
+}
+.banner-big image {
+  width: 100%;
+}
+.banner-sm{
+  width: 50%;
+  margin-right: 10rpx;
+}
+.banner-sm image{
+  width: 100%;
+}
+.banner-tips{
+  font-size:36rpx;
+  border-left: 8rpx solid #FA8072;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left:15rpx;
+}
+.banner-title{
+  font-size:28rpx;
+  line-height: 36rpx;
+}
+.banner-price{
+  font-size:28rpx;
+  line-height: 36rpx;
+  color: #FF3300;
 }
