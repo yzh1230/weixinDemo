@@ -250,6 +250,9 @@ page {
   height: 36rpx;
 }
 
+.sm-md {
+  width: 60rpx;
+}
 /* 颜色 */
 .grey{
   color: #cdcdcd;
@@ -282,11 +285,3 @@ page {
    height: 80rpx;
 }
 
-.bottom-nav{
-  width: 100%;
-  position: fixed;
-  left:0;
-  bottom: 0;
-  background: #fff;
-  height:80rpx;
-}

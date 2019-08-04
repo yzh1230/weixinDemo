@@ -1,2 +1,13 @@
 <!--pages/user/user.wxml-->
-<view>我的页面</view>
+<view>
+  <view class="flex user-head">
+    <view class="flex flex-start"> 
+      <view class="avatar">
+        <image src="../../assets/img/timg6.jpg"/>
+      </view>
+      <view class="m-left-30 f-32">
+        注册/登录
+      </view>
+    </view>
+  </view>
+</view>

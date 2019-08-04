@@ -1,10 +1,12 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/details/details",
-    "pages/logs/logs",
     "pages/user/user",
-    "pages/order/order"
+    "pages/details/details",
+    "pages/index/index",
+    "pages/logs/logs",
+   
+    "pages/order/order",
+    "pages/classification/classification"
   ],
   "tabBar": {
     "color": "#7A7E83",
@@ -19,8 +21,14 @@
         "selectedIconPath": "assets/img/home-selected.png"
       },
       {
+        "pagePath": "pages/classification/classification",
+        "text": "分类",
+        "iconPath": "assets/img/classification.png",
+        "selectedIconPath": "assets/img/classification-selected.png"
+      },
+      {
         "pagePath": "pages/order/order",
-        "text": "我的",
+        "text": "订单",
         "iconPath": "assets/img/order.png",
         "selectedIconPath": "assets/img/order-selected.png"
       },

@@ -1,22 +1,11 @@
-// pages/details/details.js
+// pages/classification/classification.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../assets/img/timg.jpg',
-      '../../assets/img/timg1.jpg',
-      '../../assets/img/timg2.jpg',
-      '../../assets/img/timg3.jpg'
-    ],
-    currentIndex:1,
-    indicatorDots: false,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
-    goodsDetail:true
+
   },
 
   /**
@@ -73,19 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  swiperChange: function (e) {
-    var that = this
-    that.setData({
-      currentIndex: e.detail.current + 1
-    })
-  },
-  tabChange:function(e){
-    var that = this
-    console.log(typeof e.currentTarget.dataset.status)
-    that.setData({
-      goodsDetail: e.currentTarget.dataset.status
-    })
-   
   }
 })

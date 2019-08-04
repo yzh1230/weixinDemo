@@ -32,3 +32,38 @@
   width: 40rpx;
   height:40rpx;
 }
+.bottom-line{
+  border-bottom:5rpx solid #FF3300;
+}
+.tab-title{
+ width: 80%;
+ height: 80rpx;
+ line-height: 80rpx;
+ text-align: center;
+ margin-bottom: 20rpx;
+}
+.record{
+  height:80rpx;
+  font-size:24rpx;
+  background:#f1f1f1;
+}
+.record-item{
+  height:60rpx;
+  font-size:24rpx;
+  color: grey;
+}
+.bottom-nav{
+  width: 100%;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  background: #fff;
+  height:80rpx;
+  padding:0rpx 30rpx;
+}
+.addShoppingCart{
+  font-size:28rpx;
+  color: #fff;
+  background: #f75f83;
+  height:80rpx;
+}

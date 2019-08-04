@@ -50,19 +50,64 @@
 
 <view class="p-left-30 p-right-30">
   <view class="flex flex-start">
-    <view class="col-6 flex flex-center">商品详情</view>
-    <view class="col-6 flex flex-center">本店成交</view>
+    <view class="col-6 flex flex-center" bindtap="tabChange" data-status="{{true}}">
+      <view class="tab-title {{goodsDetail? 'bottom-line':''}}">商品详情</view>
+    </view>
+    <view class="col-6 flex flex-center" bindtap="tabChange" data-status="{{false}}" >
+      <view class="tab-title {{goodsDetail? '':'bottom-line'}}">本店成交</view>
+    </view>
   </view>
-  <view wx:for="{{imgUrls}}" wx:key="*this">
+  <view wx:for="{{imgUrls}}" wx:key="*this" 
+  wx:if="{{goodsDetail}}">
     <image src="{{item}}" class="detail-img"/>
+  </view>
+  <view wx:if="{{!goodsDetail}}">
+    <view class="flex flex-between record">
+      <view class="flex flex-center col-4">买家</view>
+      <view class="flex flex-center col-4">成交时间</view>
+      <view class="flex flex-center col-4">数量</view>
+    </view>
+     <view class="flex flex-between record-item">
+      <view class="flex flex-center col-4">yuuu</view>
+      <view class="flex flex-center col-4">2019-08-01 19:20</view>
+      <view class="flex flex-center col-4">1</view>
+    </view>
+      <view class="flex flex-between record-item">
+      <view class="flex flex-center col-4">yuuu</view>
+      <view class="flex flex-center col-4">2019-08-01 19:20</view>
+      <view class="flex flex-center col-4">1</view>
+    </view>
+      <view class="flex flex-between record-item">
+      <view class="flex flex-center col-4">yuuu</view>
+      <view class="flex flex-center col-4">2019-08-01 19:20</view>
+      <view class="flex flex-center col-4">1</view>
+    </view>
+      <view class="flex flex-between record-item">
+      <view class="flex flex-center col-4">yuuu</view>
+      <view class="flex flex-center col-4">2019-08-01 19:20</view>
+      <view class="flex flex-center col-4">1</view>
+    </view>
+      <view class="flex flex-between record-item">
+      <view class="flex flex-center col-4">yuuu</view>
+      <view class="flex flex-center col-4">2019-08-01 19:20</view>
+      <view class="flex flex-center col-4">1</view>
+    </view>
+      <view class="flex flex-between record-item">
+      <view class="flex flex-center col-4">yuuu</view>
+      <view class="flex flex-center col-4">2019-08-01 19:20</view>
+      <view class="flex flex-center col-4">1</view>
+    </view>
   </view>
 </view>
 
 <view class="flex flex-between bottom-nav">
-  <view>首页</view>
-  <view>购物车</view>
-  <view>加入购物车</view>
-  <view>立即购买</view>
+  <view class="flex flex-center col-2">
+    <image class="sm-md" mode='widthFix' src="../../assets/img/home.png"/>
+  </view>
+  <view class="flex flex-center col-2">
+    <image class="sm-md" mode='widthFix' src="../../assets/img/shoppingCart.png"/>
+  </view>
+  <view class="col-8 flex flex-center addShoppingCart">加入购物车</view>
 </view>
 
 
