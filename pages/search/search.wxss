@@ -1,0 +1,23 @@
+/* pages/search/search.wxss */
+.search-wrap{
+  padding: 20rpx 0rpx;
+}
+.search{
+  height: 60rpx;
+  background: #f1f1f1;
+  width: 82%;
+  padding-left:30rpx;
+  border-radius: 10rpx;
+  font-size:24rpx;
+}
+.text-item{
+  border-radius: 5rpx;
+  background: #f1f1f1;
+  color: #666;
+  font-size:24rpx;
+  padding: 8rpx 15rpx;
+  margin-right:15rpx;
+  margin-top:15rpx;
+  display: inline-block;
+
+}

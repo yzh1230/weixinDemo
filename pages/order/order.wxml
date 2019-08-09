@@ -1,2 +1,12 @@
 <!--pages/order/order.wxml-->
-<view>订单</view>
+<view class="order-wrap">
+  <view class="flex flex-between bg-white h-60 f-24 p-left-30 p-right-30">
+    <view class="order-tab {{item.selected? 'border-bottom-red' : ''}} " wx:for="{{orderTabs}}" wx:key="*this" bindtap="changeOrdderTab" data-index="{{index}}">
+      {{item.text}}
+    </view>
+  </view>
+  <view class="flex-column flex-center m-top-200">
+    <icon class="iconfont icon-dingdan f-80 grey"></icon>
+    <view class="grey f-28 m-top-20">暂无订单信息</view>
+  </view>
+</view>

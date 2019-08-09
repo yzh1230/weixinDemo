@@ -1,0 +1,9 @@
+<!--pages/shoppingCart/shoppingCart.wxml-->
+<view>
+  <!-- 无商品 -->
+  <view class="flex-column flex-center p-top-200">
+    <image src="../../assets/img/shoppingCart.png" class="col-2" mode='widthFix'></image>
+    <view class="grey m-top-20" >您还没添加任何商品哦</view>
+  </view>
+  <!-- 有商品 -->
+</view>

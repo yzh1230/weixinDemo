@@ -44,7 +44,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    navHeight:0
+    navHeight:0,
+    goodsAmount:0
   }
 })
 

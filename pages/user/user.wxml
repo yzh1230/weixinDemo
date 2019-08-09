@@ -1,5 +1,5 @@
 <!--pages/user/user.wxml-->
-<view>
+<view class="user-wrap">
   <view class="flex user-head">
     <view class="flex flex-start"> 
       <view class="avatar">
@@ -10,4 +10,101 @@
       </view>
     </view>
   </view>
+
+  <view class="p-left-30 p-right-30 m-top-20">
+    <view class="flex flex-between user-info">
+      <view class=" flex-column flex-center">
+        <view class="bold">￥100</view>
+        <view class="m-top-10 drak-grey">余额</view>
+      </view>
+      <view class=" flex-column flex-center">
+        <view class="bold">2000</view>
+        <view class="m-top-10 drak-grey">积分</view>
+      </view>
+      <view class="flex-column flex-center">
+        <view class="bold">3</view>
+        <view class="m-top-10 drak-grey">红包</view>
+      </view>
+      <view class="flex-column flex-center">
+        <view class="bold">5</view>
+        <view class="m-top-10 drak-grey">优惠券</view>
+      </view>
+      <view class=" flex-column flex-center">
+        <view class="bold">1</view>
+        <view class="m-top-10 drak-grey">卡</view>
+      </view>
+    </view>
+    <!-- 我的订单 -->
+    <view class="order-info">
+      <view class="flex flex-between h-70">
+        <view class="f-32">我的订单</view>
+        <view class="drak-grey flex flex-start" bindtap="checkOrders">
+          <view> 查看更多订单</view>
+          <image class="sm-img" src="../../assets/img/arrow-right.png"/>
+        </view>
+      </view>
+      <view class="flex flex-between border-top-grey h-120">
+        <view class=" flex-column flex-center">
+          <icon class="iconfont icon-daifukuan primary"></icon> 
+          <view class="m-top-10 f-24">待付款</view>
+        </view>
+        <view class=" flex-column flex-center">
+          <icon class="iconfont icon-daifahuo primary"></icon> 
+          <view class="m-top-10 f-24">待发货</view>
+        </view>
+        <view class=" flex-column flex-center">
+          <icon class="iconfont icon-peisong1 primary"></icon> 
+          <view class="m-top-10 f-24">配送中</view>
+        </view>
+        <view class=" flex-column flex-center">
+          <icon class="iconfont icon-daipingjia primary"></icon> 
+          <view class="m-top-10 f-24">待评价</view>
+        </view>
+        <view class=" flex-column flex-center">
+          <icon class="iconfont icon-shouhoutuikuan primary"></icon> 
+          <view class="m-top-10 f-24">退款维权</view>
+        </view>
+      </view>
+    </view>
+
+     <!-- 我的服务 -->
+      <view class="service-info">
+        <view class="f-28 flex flex-start h-70">我的服务</view>
+
+        <view class="flex flex-between h-150">
+          <view class=" flex-column flex-center col-4">
+            <icon class="iconfont icon-vip primary f-48"></icon>
+            <view>充值送会员</view>
+          </view>
+          <view class=" flex-column flex-center col-4">
+            <icon class="iconfont icon-jifenshangcheng primary f-48"></icon>
+            <view>积分商城</view>
+          </view>
+          <view class=" flex-column flex-center col-4">
+            <icon class="iconfont icon-hongbao primary f-48"></icon>
+            <view>邀请得红包</view>
+          </view>
+        </view>
+
+         <view class="flex flex-between h-150">
+          <view class=" flex-column flex-center col-4">
+            <icon class="iconfont icon-shouhuodizhi primary f-48"></icon>
+            <view>收货地址</view>
+          </view>
+          <view class=" flex-column flex-center col-4">
+            <icon class="iconfont icon-customer primary f-48"></icon>
+            <view>客服和帮助</view>
+          </view>
+          <view class=" flex-column flex-center col-4">
+            <icon class="iconfont icon-shezhi primary f-48"></icon>
+            <view>设置</view>
+          </view>
+        </view>
+
+      </view>
+      
+  </view>
+
+
+
 </view>

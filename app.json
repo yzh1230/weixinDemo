@@ -1,12 +1,14 @@
 {
   "pages": [
-    "pages/user/user",
-    "pages/details/details",
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/classification/classification",
+    "pages/details/details",
+    "pages/shoppingCart/shoppingCart",
+    "pages/search/search",
+    "pages/user/user",
    
-    "pages/order/order",
-    "pages/classification/classification"
+    "pages/logs/logs",
+    "pages/order/order"
   ],
   "tabBar": {
     "color": "#7A7E83",
@@ -27,10 +29,10 @@
         "selectedIconPath": "assets/img/classification-selected.png"
       },
       {
-        "pagePath": "pages/order/order",
-        "text": "订单",
-        "iconPath": "assets/img/order.png",
-        "selectedIconPath": "assets/img/order-selected.png"
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "text": "购物车",
+        "iconPath": "assets/img/shoppingCart.png",
+        "selectedIconPath": "assets/img/shoppingCart-selected.png"
       },
       {
         "pagePath": "pages/user/user",

@@ -1,2 +1,31 @@
 <!--pages/classification/classification.wxml-->
-<text>pages/classification/classification.wxml</text>
+<view>
+  <view class="search-wrap" bindtap="toSearch" id="contentTop"> 
+    <view class="flex flex-start search-content">
+      <image class="search-icon"  src="../../assets/img/search.png" mode='widthFix'/>
+      <view class="f-28 grey">玫瑰</view>
+    </view>
+  </view>
+  <!-- 分类 -->
+  <view class="flex" style="height:{{contentHeight}}">
+    <!-- 左侧 -->
+    <view class="content-left">
+      <view class="left-item {{item.selected? 'left-item-selected' : ''}}" wx:for="{{classificationTitle}}" wx:key="*this" bindtap="changeClassification" data-index="{{index}}">{{item.title}}</view>
+    </view>
+    <!-- 右侧 -->
+    <view class="content-right">
+      <view class="right-item flex flex-start" wx:for="{{classificationGoods}}" wx:key="*this">
+        <image class="goods-icon" src="{{item.imgSrc}}" mode='widthFix'></image>
+        <view class="goods-detail">
+          <view class="goods-title">{{item.title}}</view>
+          <view class="goods-desc">{{item.desc}}</view>
+          <view class="goods-tips">{{item.tips}}</view>
+          <view class="flex flex-between goods-price">
+            <text class="primary f-28">{{item.price}}</text>
+            <view class="add-goods flex flex-center">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -56,7 +56,6 @@ Page({
       success: res=> {
         var res = res.result;
         var mks = [];
-        console.log(res);
         mks.push({ // 获取返回结果，放到mks数组中
           title: res.address,
           id: 0,
@@ -132,7 +131,14 @@ Page({
           res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
         }
       })
+  },
+  // 跳转搜索页面
+  toSearch:function(){
+    wx.navigateTo({
+      url: '../search/search',
+    })
   }
+  
 })
 
 

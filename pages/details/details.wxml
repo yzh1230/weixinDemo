@@ -101,13 +101,15 @@
 </view>
 
 <view class="flex flex-between bottom-nav">
-  <view class="flex flex-center col-2">
+  <view class="flex flex-center col-3">
     <image class="sm-md" mode='widthFix' src="../../assets/img/home.png"/>
   </view>
-  <view class="flex flex-center col-2">
+  <view class="flex flex-center col-3">
     <image class="sm-md" mode='widthFix' src="../../assets/img/shoppingCart.png"/>
+    <view class="goods-amount" wx:if="{{amount !==0}}">{{amount}}</view>
   </view>
-  <view class="col-8 flex flex-center addShoppingCart">加入购物车</view>
+  <view class="col-3 flex flex-center addShoppingCart border-left-white" bindtap="addGoods">加入购物车</view>
+  <view class="col-3 flex flex-center addShoppingCart">立即购买</view>
 </view>
 
 

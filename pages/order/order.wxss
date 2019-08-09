@@ -1,1 +1,12 @@
 /* pages/order/order.wxss */
+.order-wrap{
+   position: absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  left: 0;
+  background: #f1f1f1;
+}
+.order-tab{
+  padding:10rpx;
+}

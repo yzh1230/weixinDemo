@@ -1,0 +1,49 @@
+<!--pages/search/search.wxml-->
+<view class="p-left-30 p-right-30">
+  <view class="flex flex-between search-wrap">
+    <input class="search" type="text" confirm-type="search" placeholder="请输入内容"/>
+    <view class="f-28">搜索</view>
+  </view>
+  <!-- 历史搜索 -->
+  <view class="m-top-40">
+    <view class="flex flex-between">
+      <view>历史搜索</view>
+      <icon class="iconfont icon-delete"></icon>
+    </view>
+    <view class="m-top-20">
+      <text class="text-item">玫瑰</text>
+      <text class="text-item">茉莉</text>
+      <text class="text-item">百合</text>
+      <text class="text-item">狗尾巴草</text>
+      <text class="text-item">郁金香</text>
+      <text class="text-item">康乃馨</text>
+      <text class="text-item">玫瑰</text>
+      <text class="text-item">茉莉</text>
+      <text class="text-item">百合啦啦啦</text>
+      <text class="text-item">狗尾巴草</text>
+      <text class="text-item">郁金香</text>
+      <text class="text-item">康乃馨</text>
+    </view>
+  </view>
+
+   <!-- 热门搜索 -->
+  <view class="m-top-40">
+    <view class="flex flex-between">
+      <view>热门搜索</view>
+    </view>
+    <view class="m-top-20">
+      <text class="text-item">玫瑰</text>
+      <text class="text-item">茉莉</text>
+      <text class="text-item">百合</text>
+      <text class="text-item">狗尾巴草</text>
+      <text class="text-item">郁金香</text>
+      <text class="text-item">康乃馨</text>
+      <text class="text-item">玫瑰</text>
+      <text class="text-item">茉莉</text>
+      <text class="text-item">百合啦啦啦</text>
+      <text class="text-item">狗尾巴草</text>
+      <text class="text-item">郁金香</text>
+      <text class="text-item">康乃馨</text>
+    </view>
+  </view>
+</view>

@@ -3,7 +3,7 @@
  <view class="f-28">{{markers[0].title}}</view>
 </view>
 
-<view class="search-wrap"> 
+<view class="search-wrap" bindtap="toSearch"> 
   <view class="flex flex-start search-content">
     <image class="search-icon"  src="../../assets/img/search.png"></image>
     <view class="f-28 grey">玫瑰</view>

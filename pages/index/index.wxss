@@ -19,22 +19,7 @@
 .usermotto {
   margin-top: 200px;
 }
-.search-wrap{
-  width: 100%;
-  padding: 0rpx 30rpx;
-  margin-top:20rpx;
-  margin-bottom:20rpx;
-}
-.search-content{
-  width: 100%;
- background: #f7f7f7;
- height: 60rpx;
- border-radius: 10rpx;
-}
-.search-icon{
- width: 50rpx;
- height:50rpx;
-}
+
 .coupon-wrap{
   width: 100%;
   padding:0rpx 30rpx;

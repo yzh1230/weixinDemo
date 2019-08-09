@@ -1,3 +1,6 @@
+@import 'assets/wxss/fontIcon.wxss';
+
+
 /**app.wxss**/
 page,view,image{
   box-sizing: border-box;
@@ -160,6 +163,12 @@ page {
 .f-56 {
   font-size: 56rpx !important;
 }
+.f-60 {
+  font-size: 60rpx !important;
+}
+.f-80 {
+  font-size: 80rpx !important;
+}
 .bold{
   font-weight: bold;
 }
@@ -199,6 +208,9 @@ page {
 .p-top-10{
   padding-top:10rpx;
 }
+.p-top-200{
+  padding-top:200rpx;
+}
 .m-left-10{
   margin-left:10rpx;
 }
@@ -232,6 +244,24 @@ page {
 .m-top-10{
   margin-top: 10rpx;
 }
+.m-top-20{
+  margin-top: 20rpx;
+}
+.m-top-30{
+  margin-top: 30rpx;
+}
+.m-top-40{
+  margin-top: 40rpx;
+}
+.m-top-50{
+  margin-top: 50rpx;
+}
+.m-top-100{
+  margin-top: 100rpx;
+}
+.m-top-200{
+  margin-top: 200rpx;
+}
 /* 自定义导航 */
  
 .nav {
@@ -263,6 +293,13 @@ page {
 .red{
   color:#FF3300;
 }
+.primary{
+  color:#f75279; 
+}
+/* 背景颜色 */
+.bg-white{
+  background: #fff;
+}
 
 /* 提示框 */
 .tips-frame{
@@ -278,10 +315,58 @@ page {
 .border-top-grey{
   border-top:1rpx solid #dcdcdc;
 }
+.border-bottom-red {
+  border-bottom: 5rpx solid #FF3300;
+}
+.border-left-white {
+  border-right:1rpx solid #fff;
+}
 /* 列表 */
 .list-menu{
   font-size:24rpx;
    border-top:1rpx solid #dcdcdc;
    height: 80rpx;
+}
+/* 高度 */
+.h-50 {
+  height:50rpx;
+}
+.h-60 {
+  height:60rpx;
+}
+.h-70 {
+  height:70rpx;
+}
+.h-80 {
+  height:80rpx;
+}
+.h-90 {
+  height:90rpx;
+}
+.h-100 {
+  height:100rpx;
+}
+.h-120 {
+  height:120rpx;
+}
+.h-150 {
+  height:150rpx;
+}
+.h-200 {
+  height:200rpx;
+}
+.search-wrap{
+  width: 100%;
+  padding: 20rpx 30rpx;
+}
+.search-content{
+  width: 100%;
+ background: #f7f7f7;
+ height: 60rpx;
+ border-radius: 10rpx;
+}
+.search-icon{
+ width: 50rpx;
+ height:50rpx;
 }
 

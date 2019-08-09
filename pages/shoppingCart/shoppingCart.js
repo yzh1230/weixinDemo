@@ -1,31 +1,18 @@
-// pages/details/details.js
-let globalData = getApp().globalData
+// pages/shoppingCart/shoppingCart.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgUrls: [
-      '../../assets/img/timg.jpg',
-      '../../assets/img/timg1.jpg',
-      '../../assets/img/timg2.jpg',
-      '../../assets/img/timg3.jpg'
-    ],
-    currentIndex:1,
-    indicatorDots: false,
-    autoplay: true,
-    interval: 5000,
-    duration: 1000,
-    goodsDetail:true,
-    amount: globalData.goodsAmount
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+   
   },
 
   /**
@@ -75,26 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  swiperChange: function (e) {
-    var that = this
-    that.setData({
-      currentIndex: e.detail.current + 1
-    })
-  },
-  tabChange:function(e){
-    var that = this
-    that.setData({
-      goodsDetail: e.currentTarget.dataset.status
-    })
-   
-  },
-  addGoods: function () {
-    globalData.goodsAmount++
-    let num = this.data.amount
-    num++
-    this.setData({
-      amount: num
-    })
   }
 })
